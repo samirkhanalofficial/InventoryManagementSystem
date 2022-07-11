@@ -60,7 +60,8 @@ namespace InventoryManagmentSystem {
 
 
 	private: System::Windows::Forms::Button^ Exit;
-	private: System::Windows::Forms::CheckBox^ checkBox2;
+	private: System::Windows::Forms::CheckBox^ checkbox1;
+
 	private: System::Windows::Forms::Button^ Log_In;
 	private: System::Windows::Forms::LinkLabel^ ForgetPassword;
 
@@ -98,7 +99,7 @@ namespace InventoryManagmentSystem {
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->ConformPassword = (gcnew System::Windows::Forms::TextBox());
 			this->Exit = (gcnew System::Windows::Forms::Button());
-			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
+			this->checkbox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->Log_In = (gcnew System::Windows::Forms::Button());
 			this->ForgetPassword = (gcnew System::Windows::Forms::LinkLabel());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
@@ -304,17 +305,20 @@ namespace InventoryManagmentSystem {
 			this->Exit->UseVisualStyleBackColor = false;
 			this->Exit->Click += gcnew System::EventHandler(this, &Register::Exit_Click);
 			// 
-			// checkBox2
+			// checkbox1
 			// 
-			this->checkBox2->AutoSize = true;
-			this->checkBox2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.75F));
-			this->checkBox2->ForeColor = System::Drawing::Color::White;
-			this->checkBox2->Location = System::Drawing::Point(410, 422);
-			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(95, 19);
-			this->checkBox2->TabIndex = 32;
-			this->checkBox2->Text = L"I agree to the";
-			this->checkBox2->UseVisualStyleBackColor = true;
+			this->checkbox1->AutoSize = true;
+			this->checkbox1->Checked = true;
+			this->checkbox1->CheckState = System::Windows::Forms::CheckState::Checked;
+			this->checkbox1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.75F));
+			this->checkbox1->ForeColor = System::Drawing::Color::White;
+			this->checkbox1->Location = System::Drawing::Point(410, 422);
+			this->checkbox1->Name = L"checkbox1";
+			this->checkbox1->Size = System::Drawing::Size(95, 19);
+			this->checkbox1->TabIndex = 32;
+			this->checkbox1->Text = L"I agree to the";
+			this->checkbox1->UseVisualStyleBackColor = true;
+			
 			// 
 			// Log_In
 			// 
@@ -330,6 +334,7 @@ namespace InventoryManagmentSystem {
 			this->Log_In->Text = L"Register";
 			this->Log_In->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			this->Log_In->UseVisualStyleBackColor = false;
+			this->Log_In->Click += gcnew System::EventHandler(this, &Register::Log_In_Click);
 			// 
 			// ForgetPassword
 			// 
@@ -353,7 +358,7 @@ namespace InventoryManagmentSystem {
 			this->ClientSize = System::Drawing::Size(743, 516);
 			this->Controls->Add(this->ForgetPassword);
 			this->Controls->Add(this->Log_In);
-			this->Controls->Add(this->checkBox2);
+			this->Controls->Add(this->checkbox1);
 			this->Controls->Add(this->Exit);
 			this->Controls->Add(this->panel5);
 			this->Controls->Add(this->ConformPassword);
@@ -410,5 +415,10 @@ private: System::Void Password_KeyDown(System::Object^ sender, System::Windows::
 }
 private: System::Void ConformPassword_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
 }
+private: System::Void Log_In_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show("User Registerd Sucessfully", "Register User", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	this->Hide();
+}
+
 };
 }

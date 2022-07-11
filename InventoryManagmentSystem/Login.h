@@ -326,7 +326,9 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 private: System::Void Exit_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show("The operation has been completed ", "Notification", MessageBoxButtons::OKCancel, MessageBoxIcon::Asterisk);
 	this->Close();
+	
 }
 private: System::Void EmailBox_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
 	if (e->KeyValue == (int)Keys::Enter)
