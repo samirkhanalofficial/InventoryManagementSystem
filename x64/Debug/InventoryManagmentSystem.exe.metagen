@@ -1,6 +1,11 @@
+  InventoryManagmentSystem.Add.resources - Embedded, ContainedInManifestFile, 
+  InventoryManagmentSystem.AddProduct.resources - Embedded, ContainedInManifestFile, 
+  InventoryManagmentSystem.AddUser.resources - Embedded, ContainedInManifestFile, 
+  InventoryManagmentSystem.Dashboard.resources - Embedded, ContainedInManifestFile, 
   InventoryManagmentSystem.Login.resources - Embedded, ContainedInManifestFile, 
-  InventoryManagmentSystem.Password.resources - Embedded, ContainedInManifestFile, 
-  InventoryManagmentSystem.Register.resources - Embedded, ContainedInManifestFile, 
+  InventoryManagmentSystem.Order.resources - Embedded, ContainedInManifestFile, 
+  InventoryManagmentSystem.Product.resources - Embedded, ContainedInManifestFile, 
+  InventoryManagmentSystem.User.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly InventoryManagmentSystem, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
@@ -16,10 +21,25 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Class InventoryManagmentSystem.Password: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class InventoryManagmentSystem.Add: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class InventoryManagmentSystem.Register: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class InventoryManagmentSystem.AddProduct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class InventoryManagmentSystem.AddUser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class InventoryManagmentSystem.Order: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class InventoryManagmentSystem.User: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class InventoryManagmentSystem.Product: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class InventoryManagmentSystem.Dashboard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class InventoryManagmentSystem.Login: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

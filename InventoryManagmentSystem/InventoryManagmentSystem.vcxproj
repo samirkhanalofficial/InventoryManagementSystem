@@ -120,30 +120,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Add.cpp" />
+    <ClCompile Include="AddProduct.cpp" />
+    <ClCompile Include="AddUser.cpp" />
+    <ClCompile Include="Dashboard.cpp" />
     <ClCompile Include="Login.cpp" />
-    <ClCompile Include="Password.cpp" />
-    <ClCompile Include="Register.cpp" />
+    <ClCompile Include="Order.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Add.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddProduct.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddUser.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Dashboard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Password.h">
+    <ClInclude Include="Order.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Register.h">
+    <ClInclude Include="Product.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="User.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Password.resx">
-      <DependentUpon>Password.h</DependentUpon>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
-      <DependentUpon>Register.h</DependentUpon>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

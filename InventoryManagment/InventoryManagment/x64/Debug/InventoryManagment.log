@@ -1,0 +1,4 @@
+﻿  Login.cpp
+D:\InventoryManagmentSystem\InventoryManagment\InventoryManagment\Login.cpp(5,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Login.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  InventoryManagment.vcxproj -> D:\InventoryManagmentSystem\InventoryManagment\x64\Debug\InventoryManagment.exe

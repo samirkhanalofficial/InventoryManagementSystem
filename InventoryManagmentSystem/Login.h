@@ -1,7 +1,8 @@
 #pragma once
 
-#include"Password.h"
-#include"Register.h"
+#include"Dashboard.h"
+
+
 namespace InventoryManagmentSystem {
 
 	using namespace System;
@@ -41,22 +42,22 @@ namespace InventoryManagmentSystem {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 
-	private: System::Windows::Forms::Label^ label3;
+
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip1;
 	private: System::Windows::Forms::TextBox^ EmailBox;
 
 
-	private: System::Windows::Forms::CheckBox^ checkBox1;
-	private: System::Windows::Forms::LinkLabel^ ForgetPassword;
 
-	private: System::Windows::Forms::Button^ Log_In;
-	private: System::Windows::Forms::Button^ Exit;
+
+
+
+
 
 
 
 	private: System::ComponentModel::BackgroundWorker^ backgroundWorker1;
-	private: System::Windows::Forms::Button^ Register;
+
 
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Panel^ panel2;
@@ -64,6 +65,7 @@ namespace InventoryManagmentSystem {
 
 
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Button^ button1;
 
 	private: System::ComponentModel::IContainer^ components;
 	protected:
@@ -85,20 +87,15 @@ namespace InventoryManagmentSystem {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Login::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
 			this->EmailBox = (gcnew System::Windows::Forms::TextBox());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
-			this->ForgetPassword = (gcnew System::Windows::Forms::LinkLabel());
-			this->Log_In = (gcnew System::Windows::Forms::Button());
-			this->Exit = (gcnew System::Windows::Forms::Button());
 			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
-			this->Register = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->PasswordBox = (gcnew System::Windows::Forms::TextBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -122,18 +119,6 @@ namespace InventoryManagmentSystem {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Password";
 			this->label2->Click += gcnew System::EventHandler(this, &Login::label2_Click);
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F));
-			this->label3->Location = System::Drawing::Point(496, 329);
-			this->label3->Margin = System::Windows::Forms::Padding(0);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(109, 17);
-			this->label3->TabIndex = 3;
-			this->label3->Text = L"Not Register Yet\?";
-			this->label3->Click += gcnew System::EventHandler(this, &Login::label3_Click);
 			// 
 			// label4
 			// 
@@ -163,80 +148,6 @@ namespace InventoryManagmentSystem {
 			this->EmailBox->TabIndex = 6;
 			this->EmailBox->TextChanged += gcnew System::EventHandler(this, &Login::EmailBox_TextChanged);
 			this->EmailBox->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Login::EmailBox_KeyDown);
-			// 
-			// checkBox1
-			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 7.75F));
-			this->checkBox1->Location = System::Drawing::Point(421, 261);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(117, 17);
-			this->checkBox1->TabIndex = 8;
-			this->checkBox1->Text = L"Rembember Email";
-			this->checkBox1->UseVisualStyleBackColor = true;
-			// 
-			// ForgetPassword
-			// 
-			this->ForgetPassword->AutoSize = true;
-			this->ForgetPassword->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->ForgetPassword->LinkColor = System::Drawing::Color::DeepSkyBlue;
-			this->ForgetPassword->Location = System::Drawing::Point(579, 261);
-			this->ForgetPassword->Name = L"ForgetPassword";
-			this->ForgetPassword->Size = System::Drawing::Size(113, 17);
-			this->ForgetPassword->TabIndex = 9;
-			this->ForgetPassword->TabStop = true;
-			this->ForgetPassword->Text = L"Forgot Password\?";
-			this->ForgetPassword->VisitedLinkColor = System::Drawing::Color::White;
-			this->ForgetPassword->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &Login::ForgetPassword_LinkClicked);
-			// 
-			// Log_In
-			// 
-			this->Log_In->BackColor = System::Drawing::Color::DeepSkyBlue;
-			this->Log_In->FlatAppearance->BorderSize = 0;
-			this->Log_In->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Log_In->Font = (gcnew System::Drawing::Font(L"Segoe UI", 13.75F));
-			this->Log_In->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Log_In->Location = System::Drawing::Point(421, 288);
-			this->Log_In->Name = L"Log_In";
-			this->Log_In->Size = System::Drawing::Size(271, 36);
-			this->Log_In->TabIndex = 10;
-			this->Log_In->Text = L"Log In";
-			this->Log_In->TextAlign = System::Drawing::ContentAlignment::TopCenter;
-			this->Log_In->UseVisualStyleBackColor = false;
-			this->Log_In->Click += gcnew System::EventHandler(this, &Login::Exit_Click);
-			// 
-			// Exit
-			// 
-			this->Exit->BackColor = System::Drawing::Color::Black;
-			this->Exit->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Exit->Font = (gcnew System::Drawing::Font(L"Segoe UI", 13.75F));
-			this->Exit->ForeColor = System::Drawing::Color::DodgerBlue;
-			this->Exit->Location = System::Drawing::Point(425, 414);
-			this->Exit->Name = L"Exit";
-			this->Exit->Size = System::Drawing::Size(272, 36);
-			this->Exit->TabIndex = 11;
-			this->Exit->Text = L"Exit";
-			this->Exit->TextAlign = System::Drawing::ContentAlignment::TopCenter;
-			this->Exit->UseVisualStyleBackColor = false;
-			this->Exit->Click += gcnew System::EventHandler(this, &Login::Exit_Click);
-			// 
-			// Register
-			// 
-			this->Register->BackColor = System::Drawing::Color::DodgerBlue;
-			this->Register->FlatAppearance->BorderSize = 0;
-			this->Register->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Register->Font = (gcnew System::Drawing::Font(L"Segoe UI", 13.75F));
-			this->Register->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->Register->Location = System::Drawing::Point(425, 354);
-			this->Register->Margin = System::Windows::Forms::Padding(0);
-			this->Register->Name = L"Register";
-			this->Register->Size = System::Drawing::Size(269, 36);
-			this->Register->TabIndex = 12;
-			this->Register->Text = L"Register";
-			this->Register->TextAlign = System::Drawing::ContentAlignment::TopCenter;
-			this->Register->UseVisualStyleBackColor = false;
-			this->Register->Click += gcnew System::EventHandler(this, &Login::Register_Click);
 			// 
 			// panel1
 			// 
@@ -279,22 +190,32 @@ namespace InventoryManagmentSystem {
 			this->pictureBox1->TabIndex = 2;
 			this->pictureBox1->TabStop = false;
 			// 
+			// button1
+			// 
+			this->button1->BackColor = System::Drawing::Color::Lime;
+			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
+			this->button1->ForeColor = System::Drawing::SystemColors::ButtonFace;
+			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
+			this->button1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->button1->Location = System::Drawing::Point(425, 284);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(269, 42);
+			this->button1->TabIndex = 16;
+			this->button1->Text = L"Log In";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &Login::button1_Click);
+			// 
 			// Login
 			// 
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(743, 516);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->PasswordBox);
 			this->Controls->Add(this->panel1);
-			this->Controls->Add(this->Register);
-			this->Controls->Add(this->Exit);
-			this->Controls->Add(this->Log_In);
-			this->Controls->Add(this->ForgetPassword);
-			this->Controls->Add(this->checkBox1);
 			this->Controls->Add(this->EmailBox);
 			this->Controls->Add(this->label4);
-			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->pictureBox1);
@@ -320,13 +241,15 @@ namespace InventoryManagmentSystem {
 	private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void Login_Load(System::Object^ sender, System::EventArgs^ e) {
+	
+
 }
 private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 private: System::Void Exit_Click(System::Object^ sender, System::EventArgs^ e) {
-	MessageBox::Show("The operation has been completed ", "Notification", MessageBoxButtons::OKCancel, MessageBoxIcon::Asterisk);
+	MessageBox::Show("Do you want to exit? ", "Notification", MessageBoxButtons::OKCancel, MessageBoxIcon::Asterisk);
 	this->Close();
 	
 }
@@ -335,31 +258,34 @@ private: System::Void EmailBox_KeyDown(System::Object^ sender, System::Windows::
 		PasswordBox->Focus();
 }
 private: System::Void PassowrdBox_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
-	if (e->KeyValue == (int)Keys::Enter)
-		Exit->PerformClick();
+	
 }
 private: System::Void EmailBox_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
-private: System::Void ForgetPassword_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e) {
-     Password^ PasswordForm = gcnew Password;
-	this->Hide();
-	PasswordForm->ShowDialog();
-	this->Show();
-	
-	
-}
+
 
 private: System::Void Register_Click(System::Object^ sender, System::EventArgs^ e) {
-	InventoryManagmentSystem:: Register^ RegisterForm=gcnew InventoryManagmentSystem::Register;
-	this->Hide();
-	RegisterForm->ShowDialog();
-
-	this->Show();
 	
 	
 
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	if(EmailBox->Text == "admin" && PasswordBox->Text == "pass")
+	{
+		InventoryManagmentSystem::Dashboard^ DashForm = gcnew InventoryManagmentSystem::Dashboard;
+		this->Hide();
+		DashForm->ShowDialog();
+
+		this->Show();
+		
+	}
+
+		else
+		{
+		MessageBox::Show("Email or password is incorrect", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+		}
 }
 };
 }

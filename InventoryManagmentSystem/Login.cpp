@@ -1,6 +1,7 @@
 #include "Login.h"
-#include"Password.h"
-#include"Register.h"
+
+
+
 
 
 using namespace System;
