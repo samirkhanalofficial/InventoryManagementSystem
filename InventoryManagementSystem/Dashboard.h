@@ -1,5 +1,4 @@
 #pragma once
-
 namespace InventoryManagementSystem {
 
 	using namespace System;
@@ -17,6 +16,19 @@ namespace InventoryManagementSystem {
 	{
 	public:
 		Form^ loginform;
+	private: Pages::DashboardScreen^ dashboardScreen1;
+	public:
+
+	public:
+
+
+
+
+
+
+
+	public:
+		
 		Dashboard(void)
 		{
 			InitializeComponent();
@@ -28,6 +40,8 @@ namespace InventoryManagementSystem {
 		{
 			InitializeComponent();
 			loginform = temp;
+			
+
 			//
 			//TODO: Add the constructor code here
 			//
@@ -46,34 +60,34 @@ namespace InventoryManagementSystem {
 		}
 	private: System::Windows::Forms::Panel^ panel1;
 	protected:
-	private: System::Windows::Forms::Panel^ panel2;
+
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::PictureBox^ pictureBox5;
 	private: System::Windows::Forms::PictureBox^ pictureBox4;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
-	private: System::Windows::Forms::Panel^ panel3;
-	private: System::Windows::Forms::Label^ label3;
 
 
-	private: System::Windows::Forms::Label^ totalproduct_count;
-
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Panel^ panel5;
-	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::Label^ sold_amount;
 
 
-	private: System::Windows::Forms::Panel^ panel4;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ total_products_count;
 
 
-	private: System::Windows::Forms::Panel^ panel6;
-	private: System::Windows::Forms::Label^ label7;
-	private: System::Windows::Forms::Label^ total_users_count;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::PictureBox^ pictureBox6;
-	private: System::Windows::Forms::Label^ label4;
+
 
 
 
@@ -100,21 +114,7 @@ namespace InventoryManagementSystem {
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->panel2 = (gcnew System::Windows::Forms::Panel());
-			this->panel5 = (gcnew System::Windows::Forms::Panel());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->sold_amount = (gcnew System::Windows::Forms::Label());
-			this->panel4 = (gcnew System::Windows::Forms::Panel());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->total_products_count = (gcnew System::Windows::Forms::Label());
-			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->total_users_count = (gcnew System::Windows::Forms::Label());
-			this->panel3 = (gcnew System::Windows::Forms::Panel());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->totalproduct_count = (gcnew System::Windows::Forms::Label());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->dashboardScreen1 = (gcnew Pages::DashboardScreen());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
@@ -122,11 +122,6 @@ namespace InventoryManagementSystem {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
-			this->panel2->SuspendLayout();
-			this->panel5->SuspendLayout();
-			this->panel4->SuspendLayout();
-			this->panel6->SuspendLayout();
-			this->panel3->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panel1
@@ -144,6 +139,7 @@ namespace InventoryManagementSystem {
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(259, 853);
 			this->panel1->TabIndex = 0;
+			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::panel1_Paint);
 			// 
 			// pictureBox6
 			// 
@@ -154,6 +150,7 @@ namespace InventoryManagementSystem {
 			this->pictureBox6->Size = System::Drawing::Size(145, 40);
 			this->pictureBox6->TabIndex = 6;
 			this->pictureBox6->TabStop = false;
+			this->pictureBox6->Click += gcnew System::EventHandler(this, &Dashboard::pictureBox6_Click);
 			// 
 			// pictureBox5
 			// 
@@ -177,6 +174,7 @@ namespace InventoryManagementSystem {
 			this->pictureBox4->Size = System::Drawing::Size(145, 40);
 			this->pictureBox4->TabIndex = 4;
 			this->pictureBox4->TabStop = false;
+			this->pictureBox4->Click += gcnew System::EventHandler(this, &Dashboard::pictureBox4_Click);
 			// 
 			// pictureBox3
 			// 
@@ -187,6 +185,7 @@ namespace InventoryManagementSystem {
 			this->pictureBox3->Size = System::Drawing::Size(170, 42);
 			this->pictureBox3->TabIndex = 3;
 			this->pictureBox3->TabStop = false;
+			this->pictureBox3->Click += gcnew System::EventHandler(this, &Dashboard::pictureBox3_Click);
 			// 
 			// pictureBox2
 			// 
@@ -197,6 +196,7 @@ namespace InventoryManagementSystem {
 			this->pictureBox2->Size = System::Drawing::Size(170, 42);
 			this->pictureBox2->TabIndex = 2;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &Dashboard::pictureBox2_Click);
 			// 
 			// pictureBox1
 			// 
@@ -208,164 +208,21 @@ namespace InventoryManagementSystem {
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &Dashboard::pictureBox1_Click);
 			// 
-			// panel2
+			// dashboardScreen1
 			// 
-			this->panel2->Controls->Add(this->label4);
-			this->panel2->Controls->Add(this->panel5);
-			this->panel2->Controls->Add(this->panel4);
-			this->panel2->Controls->Add(this->panel6);
-			this->panel2->Controls->Add(this->panel3);
-			this->panel2->Controls->Add(this->label1);
-			this->panel2->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel2->Location = System::Drawing::Point(259, 0);
-			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(1160, 853);
-			this->panel2->TabIndex = 1;
+			this->dashboardScreen1->Location = System::Drawing::Point(265, 3);
+			this->dashboardScreen1->Name = L"dashboardScreen1";
+			this->dashboardScreen1->Size = System::Drawing::Size(1113, 566);
+			this->dashboardScreen1->TabIndex = 1;
 			// 
-			// panel5
-			// 
-			this->panel5->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->panel5->Controls->Add(this->label5);
-			this->panel5->Controls->Add(this->sold_amount);
-			this->panel5->Location = System::Drawing::Point(1201, 127);
-			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(246, 183);
-			this->panel5->TabIndex = 5;
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label5->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
-			this->label5->Location = System::Drawing::Point(47, 128);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(168, 31);
-			this->label5->TabIndex = 2;
-			this->label5->Text = L"Sold Amount";
-			// 
-			// sold_amount
-			// 
-			this->sold_amount->AutoSize = true;
-			this->sold_amount->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20));
-			this->sold_amount->Location = System::Drawing::Point(96, 60);
-			this->sold_amount->Name = L"sold_amount";
-			this->sold_amount->Size = System::Drawing::Size(55, 39);
-			this->sold_amount->TabIndex = 1;
-			this->sold_amount->Text = L"54";
-			// 
-			// panel4
-			// 
-			this->panel4->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->panel4->Controls->Add(this->label2);
-			this->panel4->Controls->Add(this->total_products_count);
-			this->panel4->Location = System::Drawing::Point(450, 127);
-			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(246, 183);
-			this->panel4->TabIndex = 3;
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label2->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
-			this->label2->Location = System::Drawing::Point(47, 128);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(183, 31);
-			this->label2->TabIndex = 2;
-			this->label2->Text = L"Products Sold";
-			// 
-			// total_products_count
-			// 
-			this->total_products_count->AutoSize = true;
-			this->total_products_count->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20));
-			this->total_products_count->Location = System::Drawing::Point(96, 60);
-			this->total_products_count->Name = L"total_products_count";
-			this->total_products_count->Size = System::Drawing::Size(55, 39);
-			this->total_products_count->TabIndex = 1;
-			this->total_products_count->Text = L"54";
-			// 
-			// panel6
-			// 
-			this->panel6->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->panel6->Controls->Add(this->label7);
-			this->panel6->Controls->Add(this->total_users_count);
-			this->panel6->Location = System::Drawing::Point(821, 127);
-			this->panel6->Name = L"panel6";
-			this->panel6->Size = System::Drawing::Size(246, 183);
-			this->panel6->TabIndex = 4;
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label7->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
-			this->label7->Location = System::Drawing::Point(53, 128);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(154, 31);
-			this->label7->TabIndex = 2;
-			this->label7->Text = L"Total Users";
-			// 
-			// total_users_count
-			// 
-			this->total_users_count->AutoSize = true;
-			this->total_users_count->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20));
-			this->total_users_count->Location = System::Drawing::Point(95, 60);
-			this->total_users_count->Name = L"total_users_count";
-			this->total_users_count->Size = System::Drawing::Size(55, 39);
-			this->total_users_count->TabIndex = 1;
-			this->total_users_count->Text = L"54";
-			// 
-			// panel3
-			// 
-			this->panel3->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->panel3->Controls->Add(this->label3);
-			this->panel3->Controls->Add(this->totalproduct_count);
-			this->panel3->Location = System::Drawing::Point(70, 127);
-			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(246, 183);
-			this->panel3->TabIndex = 1;
-			this->panel3->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::panel3_Paint);
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label3->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
-			this->label3->Location = System::Drawing::Point(32, 128);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(190, 31);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Total Products";
-			// 
-			// totalproduct_count
-			// 
-			this->totalproduct_count->AutoSize = true;
-			this->totalproduct_count->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20));
-			this->totalproduct_count->Location = System::Drawing::Point(95, 60);
-			this->totalproduct_count->Name = L"totalproduct_count";
-			this->totalproduct_count->Size = System::Drawing::Size(55, 39);
-			this->totalproduct_count->TabIndex = 1;
-			this->totalproduct_count->Text = L"54";
-			this->totalproduct_count->Click += gcnew System::EventHandler(this, &Dashboard::totalproduct_count_Click);
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(40, 41);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(161, 36);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Dashboard";
-			
 			// Dashboard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1419, 853);
-			this->Controls->Add(this->panel2);
+			this->Controls->Add(this->dashboardScreen1);
 			this->Controls->Add(this->panel1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MinimumSize = System::Drawing::Size(1437, 900);
@@ -381,16 +238,6 @@ namespace InventoryManagementSystem {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
-			this->panel2->ResumeLayout(false);
-			this->panel2->PerformLayout();
-			this->panel5->ResumeLayout(false);
-			this->panel5->PerformLayout();
-			this->panel4->ResumeLayout(false);
-			this->panel4->PerformLayout();
-			this->panel6->ResumeLayout(false);
-			this->panel6->PerformLayout();
-			this->panel3->ResumeLayout(false);
-			this->panel3->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -408,6 +255,42 @@ private: System::Void listView1_SelectedIndexChanged(System::Object^ sender, Sys
 private: System::Void panel3_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 private: System::Void totalproduct_count_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void pictureBox6_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox4_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void panel5_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void sold_amount_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void panel4_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void total_products_count_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void panel6_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void total_users_count_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

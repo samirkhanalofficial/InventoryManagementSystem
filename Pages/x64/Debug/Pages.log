@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  DashboardScreen.cpp
+  Pages.cpp
+  Generating Code...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Pages.vcxproj -> C:\Users\anish\Downloads\samir\InventoryManagementSystem\x64\Debug\Pages.dll

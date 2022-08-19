@@ -1,5 +1,6 @@
 #pragma once
 #include"Dashboard.h"
+
 namespace InventoryManagementSystem {
 
 	using namespace System;

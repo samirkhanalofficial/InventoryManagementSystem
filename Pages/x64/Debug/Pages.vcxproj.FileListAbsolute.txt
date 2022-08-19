@@ -1,0 +1,3 @@
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\Pages\x64\Debug\Pages.vcxproj.AssemblyReference.cache
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\Pages\x64\Debug\Pages.DashboardScreen.resources
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\Pages\x64\Debug\Pages.vcxproj.GenerateResource.cache

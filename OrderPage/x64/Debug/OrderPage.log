@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  DashboardPage.cpp
+  OrderPage.cpp
+  OrderSCreen.cpp
+  Generating Code...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  OrderPage.vcxproj -> C:\Users\anish\Downloads\samir\InventoryManagementSystem\x64\Debug\OrderPage.dll

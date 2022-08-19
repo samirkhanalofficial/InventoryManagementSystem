@@ -1,0 +1,4 @@
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\OrderPage\x64\Debug\OrderPage.vcxproj.AssemblyReference.cache
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\OrderPage\x64\Debug\OrderPage.OrderSCreen.resources
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\OrderPage\x64\Debug\OrderPage.vcxproj.GenerateResource.cache
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\OrderPage\x64\Debug\OrderPage.DashboardPage.resources

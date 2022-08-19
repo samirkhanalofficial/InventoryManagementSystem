@@ -7,3 +7,4 @@ C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSyst
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.MyForm.resources
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.GenerateResource.cache
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.Dashboard.resources
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.CopyComplete
