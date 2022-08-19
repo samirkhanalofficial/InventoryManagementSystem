@@ -1,0 +1,13 @@
+﻿  AddOrder1.cpp
+  AddProduct.cpp
+  AddUser.cpp
+  Dashboard.cpp
+  Login.cpp
+E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Login.cpp(13,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Order.cpp
+  Product.cpp
+  User.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...
+  AddOrder1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+LINK : fatal error LNK1561: entry point must be defined

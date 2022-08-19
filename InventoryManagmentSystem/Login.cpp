@@ -1,6 +1,10 @@
 #include "Login.h"
-#include"Password.h"
-#include"Register.h"
+#include "Dashboard.h"
+#include "Order.h"
+#include "Product.h"
+
+
+
 
 
 using namespace System;

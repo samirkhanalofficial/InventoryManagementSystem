@@ -260,7 +260,7 @@ namespace InventoryManagmentSystem {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(408, 97);
+			this->label3->Location = System::Drawing::Point(409, 86);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(59, 28);
 			this->label3->TabIndex = 24;
@@ -345,14 +345,23 @@ private: System::Void Exit_Click(System::Object^ sender, System::EventArgs^ e) {
 	Password::Close();
 }
 private: System::Void Conform_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (NewPassword->Text == ConformPassword->Text)
-	{
-		MessageBox::Show("Password Changed Sucessfully", "Change Password", MessageBoxButtons::OK, MessageBoxIcon::Information);
-		this->Hide();
+	if ((NewPassword->Text->Trim()->Length >= 8)) {
+
+		if (NewPassword->Text == ConformPassword->Text)
+		{
+			MessageBox::Show("Password Changed Sucessfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+			this->Hide();
+		}
+
+		else
+		{
+			MessageBox::Show("Password not matched", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+		}
 	}
-	else
-	{
-		MessageBox::Show("Password not matched", "Password Changed", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+	else {
+		MessageBox::Show("Password must be atleast 8character long.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+
+
 	}
 	
 }

@@ -1,0 +1,4 @@
+D:\InventoryManagmentSystem\InventoryManagment\InventoryManagment\x64\Debug\InventoryManagment.vcxproj.AssemblyReference.cache
+D:\InventoryManagmentSystem\InventoryManagment\InventoryManagment\x64\Debug\InventoryManagment.vcxproj.SuggestedBindingRedirects.cache
+D:\InventoryManagmentSystem\InventoryManagment\InventoryManagment\x64\Debug\InventoryManagment.Login.resources
+D:\InventoryManagmentSystem\InventoryManagment\InventoryManagment\x64\Debug\InventoryManagment.vcxproj.GenerateResource.cache
