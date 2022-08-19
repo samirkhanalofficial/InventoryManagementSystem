@@ -255,11 +255,7 @@ namespace InventoryManagmentSystem {
 	}
 
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		InventoryManagmentSystem::Dashboard^ formdash = gcnew InventoryManagmentSystem::Dashboard();
-		this->Hide();
-		formdash->ShowDialog();
-
-		this->Show();
+	
 	}
 	private: System::Void Dashbrd_Click(System::Object^ sender, System::EventArgs^ e) {
 		

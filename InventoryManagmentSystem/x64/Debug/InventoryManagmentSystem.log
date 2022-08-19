@@ -1,38 +1,8 @@
 ﻿  Dashboard.cpp
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,29): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2065: 'Dashboard': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,40): error C2065: 'formdash': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,83): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2061: syntax error: identifier 'Dashboard'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(261,3): error C2065: 'formdash': undeclared identifier
   Login.cpp
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,29): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2065: 'Dashboard': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,40): error C2065: 'formdash': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,83): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2061: syntax error: identifier 'Dashboard'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(261,3): error C2065: 'formdash': undeclared identifier
 E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Login.cpp(13,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
   Order.cpp
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,29): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2065: 'Dashboard': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,40): error C2065: 'formdash': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,83): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2061: syntax error: identifier 'Dashboard'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(261,3): error C2065: 'formdash': undeclared identifier
   Product.cpp
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,29): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2065: 'Dashboard': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,40): error C2065: 'formdash': undeclared identifier
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,83): error C2039: 'Dashboard': is not a member of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(5): message : see declaration of 'InventoryManagmentSystem'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(259,1): error C2061: syntax error: identifier 'Dashboard'
-E:\exam material\InventoryManagmentSystem\InventoryManagmentSystem\Order.h(261,3): error C2065: 'formdash': undeclared identifier
   Generating Code...
+  AddOrder1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  InventoryManagmentSystem.vcxproj -> E:\exam material\InventoryManagmentSystem\x64\Debug\InventoryManagmentSystem.exe
