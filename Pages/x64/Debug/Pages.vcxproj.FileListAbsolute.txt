@@ -15,3 +15,20 @@ C:\Users\anish\Downloads\samir\InventoryManagementSystem\Pages\x64\Debug\Pages.p
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\Pages\x64\Debug\Pages.products1.resources
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\Pages\x64\Debug\Pages.users0.resources
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\Pages\x64\Debug\Pages.Users1.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.vcxproj.AssemblyReference.cache
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.dahhboard1.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.dashboard0.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.DashboardScreen.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.OrderItem.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.orders0.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.orders1.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.OrdersScreen.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.ProductItem.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.products0.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.products1.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.ProductsSCreen.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.UserItem.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.users0.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.Users1.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.UserScreen.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.vcxproj.GenerateResource.cache

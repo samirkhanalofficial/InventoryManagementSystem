@@ -8,3 +8,12 @@ C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSyst
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.MyForm.resources
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.GenerateResource.cache
 C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.CopyComplete
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.AssemblyReference.cache
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.SuggestedBindingRedirects.cache
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.Dashboard.resources
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.MyForm.resources
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.GenerateResource.cache
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.vcxproj.CopyComplete
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.AddOrder.resources
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.AddProduct.resources
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.AddUser.resources

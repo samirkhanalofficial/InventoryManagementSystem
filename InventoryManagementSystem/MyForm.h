@@ -86,10 +86,9 @@ namespace InventoryManagementSystem {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(23, 88);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
+			this->pictureBox1->Location = System::Drawing::Point(17, 72);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(324, 166);
+			this->pictureBox1->Size = System::Drawing::Size(243, 135);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
@@ -98,20 +97,19 @@ namespace InventoryManagementSystem {
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(454, 139);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4);
+			this->textBox1->Location = System::Drawing::Point(340, 113);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(316, 30);
+			this->textBox1->Size = System::Drawing::Size(238, 26);
 			this->textBox1->TabIndex = 1;
 			// 
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(454, 206);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4);
+			this->textBox2->Location = System::Drawing::Point(340, 167);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(316, 30);
+			this->textBox2->PasswordChar = '*';
+			this->textBox2->Size = System::Drawing::Size(238, 26);
 			this->textBox2->TabIndex = 2;
 			// 
 			// button1
@@ -122,10 +120,9 @@ namespace InventoryManagementSystem {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::Transparent;
-			this->button1->Location = System::Drawing::Point(454, 265);
-			this->button1->Margin = System::Windows::Forms::Padding(4);
+			this->button1->Location = System::Drawing::Point(340, 215);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(125, 44);
+			this->button1->Size = System::Drawing::Size(94, 36);
 			this->button1->TabIndex = 3;
 			this->button1->Text = L"login";
 			this->button1->UseVisualStyleBackColor = false;
@@ -135,10 +132,9 @@ namespace InventoryManagementSystem {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
-			this->label1->Location = System::Drawing::Point(454, 119);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(340, 97);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(40, 16);
+			this->label1->Size = System::Drawing::Size(31, 13);
 			this->label1->TabIndex = 4;
 			this->label1->Text = L"email";
 			// 
@@ -146,10 +142,9 @@ namespace InventoryManagementSystem {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Location = System::Drawing::Point(454, 187);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(340, 152);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(66, 16);
+			this->label2->Size = System::Drawing::Size(52, 13);
 			this->label2->TabIndex = 5;
 			this->label2->Text = L"password";
 			// 
@@ -167,28 +162,29 @@ namespace InventoryManagementSystem {
 			this->panel1->Controls->Add(this->textBox2);
 			this->panel1->Controls->Add(this->textBox1);
 			this->panel1->Controls->Add(this->pictureBox1);
-			this->panel1->Location = System::Drawing::Point(60, 79);
+			this->panel1->Location = System::Drawing::Point(45, 64);
+			this->panel1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(829, 374);
+			this->panel1->Size = System::Drawing::Size(622, 304);
 			this->panel1->TabIndex = 7;
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
 			this->label5->ForeColor = System::Drawing::Color::Red;
-			this->label5->Location = System::Drawing::Point(454, 242);
+			this->label5->Location = System::Drawing::Point(340, 197);
+			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(0, 16);
+			this->label5->Size = System::Drawing::Size(0, 13);
 			this->label5->TabIndex = 9;
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
 			this->label4->BackColor = System::Drawing::Color::Transparent;
-			this->label4->Location = System::Drawing::Point(451, 81);
-			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Location = System::Drawing::Point(338, 66);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(127, 16);
+			this->label4->Size = System::Drawing::Size(105, 13);
 			this->label4->TabIndex = 8;
 			this->label4->Text = L"Login to your Shop!!!";
 			// 
@@ -197,9 +193,10 @@ namespace InventoryManagementSystem {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(448, 49);
+			this->label3->Location = System::Drawing::Point(336, 40);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(85, 32);
+			this->label3->Size = System::Drawing::Size(65, 26);
 			this->label3->TabIndex = 7;
 			this->label3->Text = L"Login";
 			// 
@@ -207,10 +204,9 @@ namespace InventoryManagementSystem {
 			// 
 			this->linkLabel1->AutoSize = true;
 			this->linkLabel1->BackColor = System::Drawing::Color::Transparent;
-			this->linkLabel1->Location = System::Drawing::Point(693, 256);
-			this->linkLabel1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->linkLabel1->Location = System::Drawing::Point(520, 208);
 			this->linkLabel1->Name = L"linkLabel1";
-			this->linkLabel1->Size = System::Drawing::Size(77, 16);
+			this->linkLabel1->Size = System::Drawing::Size(63, 13);
 			this->linkLabel1->TabIndex = 6;
 			this->linkLabel1->TabStop = true;
 			this->linkLabel1->Text = L"need help \?";
@@ -224,20 +220,19 @@ namespace InventoryManagementSystem {
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel2->Location = System::Drawing::Point(0, 0);
 			this->panel2->Margin = System::Windows::Forms::Padding(0);
-			this->panel2->MinimumSize = System::Drawing::Size(941, 540);
+			this->panel2->MinimumSize = System::Drawing::Size(706, 439);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(941, 540);
+			this->panel2->Size = System::Drawing::Size(706, 439);
 			this->panel2->TabIndex = 8;
 			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::panel2_Paint);
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(941, 540);
+			this->ClientSize = System::Drawing::Size(706, 439);
 			this->Controls->Add(this->panel2);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Login : Inventery Management System";
@@ -254,7 +249,7 @@ namespace InventoryManagementSystem {
 private: System::Void Login_Btn_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ email = this->textBox1->Text;
 	String^ password = this->textBox2->Text;
-	if (email == "admin@admin.com" && password == "admin123") {
+	if (email == "admin" && password =="pass") {
 		this->Hide();
 		InventoryManagementSystem::Dashboard ^dashboard=gcnew Dashboard(this);
 		dashboard->Show();
