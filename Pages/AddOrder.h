@@ -43,6 +43,8 @@ namespace Pages {
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::TextBox^ textBox4;
 
 	private:
 		/// <summary>
@@ -66,6 +68,8 @@ namespace Pages {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// button3
@@ -86,7 +90,7 @@ namespace Pages {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(19, 251);
+			this->textBox3->Location = System::Drawing::Point(20, 301);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(252, 20);
 			this->textBox3->TabIndex = 115;
@@ -96,7 +100,7 @@ namespace Pages {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(17, 232);
+			this->label4->Location = System::Drawing::Point(22, 273);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(102, 16);
 			this->label4->TabIndex = 114;
@@ -105,7 +109,7 @@ namespace Pages {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(19, 194);
+			this->textBox2->Location = System::Drawing::Point(19, 237);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(252, 20);
 			this->textBox2->TabIndex = 113;
@@ -115,7 +119,7 @@ namespace Pages {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(16, 169);
+			this->label3->Location = System::Drawing::Point(19, 215);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(104, 16);
 			this->label3->TabIndex = 112;
@@ -134,11 +138,11 @@ namespace Pages {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(16, 114);
+			this->label2->Location = System::Drawing::Point(20, 114);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(56, 16);
+			this->label2->Size = System::Drawing::Size(96, 16);
 			this->label2->TabIndex = 110;
-			this->label2->Text = L"Product ";
+			this->label2->Text = L"Product  Name";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label1
@@ -154,11 +158,32 @@ namespace Pages {
 			this->label1->Text = L"Add Orders";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(19, 161);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(96, 16);
+			this->label5->TabIndex = 117;
+			this->label5->Text = L"Product  Name";
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(19, 185);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(252, 20);
+			this->textBox4->TabIndex = 118;
+			// 
 			// AddOrder
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(617, 409);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->label4);

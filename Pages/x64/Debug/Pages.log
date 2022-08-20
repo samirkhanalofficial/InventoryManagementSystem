@@ -1,3 +1,4 @@
-﻿  UserScreen.cpp
-  AddOrder.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Pages.vcxproj -> D:\task next\InventoryManagementSystem\x64\Debug\Pages.dll
+﻿  AddOrder.cpp
+  OrdersScreen.cpp
+  Generating Code...
+LINK : fatal error LNK1104: cannot open file 'D:\task next\InventoryManagementSystem\x64\Debug\Pages.dll'
