@@ -1,7 +1,21 @@
 ﻿  pch.cpp
   AssemblyInfo.cpp
+  dahhboard1.cpp
+  dashboard0.cpp
   DashboardScreen.cpp
+  OrderItem.cpp
+  orders0.cpp
+  orders1.cpp
+  OrdersScreen.cpp
   Pages.cpp
+  ProductItem.cpp
+  products0.cpp
+  products1.cpp
+  ProductsSCreen.cpp
+  UserItem.cpp
+  users0.cpp
+  Users1.cpp
+  UserScreen.cpp
   Generating Code...
   .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link

@@ -1,4 +1,18 @@
+  Pages.dahhboard1.resources - Embedded, ContainedInManifestFile, 
+  Pages.dashboard0.resources - Embedded, ContainedInManifestFile, 
   Pages.DashboardScreen.resources - Embedded, ContainedInManifestFile, 
+  Pages.OrderItem.resources - Embedded, ContainedInManifestFile, 
+  Pages.orders0.resources - Embedded, ContainedInManifestFile, 
+  Pages.orders1.resources - Embedded, ContainedInManifestFile, 
+  Pages.OrdersScreen.resources - Embedded, ContainedInManifestFile, 
+  Pages.ProductItem.resources - Embedded, ContainedInManifestFile, 
+  Pages.products0.resources - Embedded, ContainedInManifestFile, 
+  Pages.products1.resources - Embedded, ContainedInManifestFile, 
+  Pages.ProductsSCreen.resources - Embedded, ContainedInManifestFile, 
+  Pages.UserItem.resources - Embedded, ContainedInManifestFile, 
+  Pages.users0.resources - Embedded, ContainedInManifestFile, 
+  Pages.Users1.resources - Embedded, ContainedInManifestFile, 
+  Pages.UserScreen.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Pages, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
@@ -14,8 +28,50 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class Pages.dahhboard1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.dashboard0: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Pages.DashboardScreen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.UserControl
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.OrderItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.orders0: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.orders1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.OrdersScreen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Pages.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.ProductItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.products0: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.products1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.ProductsSCreen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.UserItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.users0: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.Users1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Pages.UserScreen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -120,16 +120,64 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="dahhboard1.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="dashboard0.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="DashboardScreen.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="orders0.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="orders1.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="OrdersScreen.h">
       <FileType>CppControl</FileType>
     </ClInclude>
     <ClInclude Include="Pages.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="ProductItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="products0.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="products1.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="ProductsSCreen.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="UserItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="users0.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="Users1.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UserScreen.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="dahhboard1.cpp" />
+    <ClCompile Include="dashboard0.cpp" />
     <ClCompile Include="DashboardScreen.cpp" />
+    <ClCompile Include="OrderItem.cpp" />
+    <ClCompile Include="orders0.cpp" />
+    <ClCompile Include="orders1.cpp" />
+    <ClCompile Include="OrdersScreen.cpp" />
     <ClCompile Include="Pages.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -137,6 +185,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ProductItem.cpp" />
+    <ClCompile Include="products0.cpp" />
+    <ClCompile Include="products1.cpp" />
+    <ClCompile Include="ProductsSCreen.cpp" />
+    <ClCompile Include="UserItem.cpp" />
+    <ClCompile Include="users0.cpp" />
+    <ClCompile Include="Users1.cpp" />
+    <ClCompile Include="UserScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />
@@ -152,8 +208,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dahhboard1.resx">
+      <DependentUpon>dahhboard1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard0.resx">
+      <DependentUpon>dashboard0.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashboardScreen.resx">
       <DependentUpon>DashboardScreen.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItem.resx">
+      <DependentUpon>OrderItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders0.resx">
+      <DependentUpon>orders0.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders1.resx">
+      <DependentUpon>orders1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersScreen.resx">
+      <DependentUpon>OrdersScreen.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductItem.resx">
+      <DependentUpon>ProductItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="products0.resx">
+      <DependentUpon>products0.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="products1.resx">
+      <DependentUpon>products1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsSCreen.resx">
+      <DependentUpon>ProductsSCreen.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserItem.resx">
+      <DependentUpon>UserItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users0.resx">
+      <DependentUpon>users0.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users1.resx">
+      <DependentUpon>Users1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserScreen.resx">
+      <DependentUpon>UserScreen.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

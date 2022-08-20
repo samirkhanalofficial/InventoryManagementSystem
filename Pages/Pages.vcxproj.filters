@@ -27,6 +27,48 @@
     <ClInclude Include="DashboardScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="OrdersScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductsSCreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dashboard0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dahhboard1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orders0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orders1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="products0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="products1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="users0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Users1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Pages.cpp">
@@ -39,6 +81,48 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DashboardScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrdersScreen.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductsSCreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dashboard0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dahhboard1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="orders0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="orders1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="products0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="products1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="users0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Users1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
