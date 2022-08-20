@@ -1,3 +1,7 @@
-﻿  AddUser.cpp
-  AddOrder.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+﻿  Dashboard.cpp
+  MyForm.cpp
+D:\task next\InventoryManagementSystem\InventoryManagementSystem\MyForm.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...
+  Dashboard.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   InventoryManagementSystem.vcxproj -> D:\task next\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.exe

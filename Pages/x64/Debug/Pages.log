@@ -1,1 +1,3 @@
-﻿  Pages.vcxproj -> D:\task next\InventoryManagementSystem\x64\Debug\Pages.dll
+﻿  UserScreen.cpp
+  AddOrder.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Pages.vcxproj -> D:\task next\InventoryManagementSystem\x64\Debug\Pages.dll

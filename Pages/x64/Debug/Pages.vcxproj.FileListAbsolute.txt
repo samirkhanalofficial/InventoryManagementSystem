@@ -32,3 +32,6 @@ D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.users0.resources
 D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.Users1.resources
 D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.UserScreen.resources
 D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.vcxproj.GenerateResource.cache
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.AddOrder.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.AddProduct.resources
+D:\task next\InventoryManagementSystem\Pages\x64\Debug\Pages.AddUser.resources

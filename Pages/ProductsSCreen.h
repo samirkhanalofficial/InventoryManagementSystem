@@ -1,5 +1,6 @@
 #pragma once
 #include"ProductItem.h"
+#include"AddProduct.h"
 using namespace System;
 using namespace System::ComponentModel;
 using namespace System::Collections;
@@ -77,20 +78,23 @@ namespace Pages {
 			this->pictureBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
-			this->pictureBox1->Location = System::Drawing::Point(997, 23);
+			this->pictureBox1->Location = System::Drawing::Point(748, 19);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(128, 61);
+			this->pictureBox1->Size = System::Drawing::Size(96, 50);
 			this->pictureBox1->TabIndex = 9;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &ProductsSCreen::AddProduct);
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(28, 23);
+			this->label1->Location = System::Drawing::Point(21, 19);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(134, 36);
+			this->label1->Size = System::Drawing::Size(108, 29);
 			this->label1->TabIndex = 8;
 			this->label1->Text = L"Products";
 			// 
@@ -99,9 +103,10 @@ namespace Pages {
 			this->productItem1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->productItem1->BackColor = System::Drawing::Color::White;
-			this->productItem1->Location = System::Drawing::Point(81, 100);
+			this->productItem1->Location = System::Drawing::Point(61, 81);
+			this->productItem1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->productItem1->Name = L"productItem1";
-			this->productItem1->Size = System::Drawing::Size(990, 225);
+			this->productItem1->Size = System::Drawing::Size(742, 183);
 			this->productItem1->TabIndex = 10;
 			// 
 			// productItem2
@@ -109,26 +114,32 @@ namespace Pages {
 			this->productItem2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->productItem2->BackColor = System::Drawing::Color::White;
-			this->productItem2->Location = System::Drawing::Point(81, 360);
+			this->productItem2->Location = System::Drawing::Point(61, 292);
+			this->productItem2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->productItem2->Name = L"productItem2";
-			this->productItem2->Size = System::Drawing::Size(990, 225);
+			this->productItem2->Size = System::Drawing::Size(742, 183);
 			this->productItem2->TabIndex = 11;
 			// 
 			// ProductsSCreen
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->Controls->Add(this->productItem2);
 			this->Controls->Add(this->productItem1);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label1);
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"ProductsSCreen";
-			this->Size = System::Drawing::Size(1162, 570);
+			this->Size = System::Drawing::Size(872, 463);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	};
+	private: System::Void AddProduct(System::Object^ sender, System::EventArgs^ e) {
+		Pages::AddProduct^ Addproduct = gcnew Pages::AddProduct();
+		Addproduct->Show();
+	}
+};
 }
