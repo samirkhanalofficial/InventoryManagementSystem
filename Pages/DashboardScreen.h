@@ -1,5 +1,5 @@
 #pragma once
-
+#include"../InventoryManagementSystem/dashboardModel.h"
 using namespace System;
 using namespace System::ComponentModel;
 using namespace System::Collections;
@@ -9,7 +9,7 @@ using namespace System::Drawing;
 
 
 namespace Pages {
-
+	int userCount, productCount, orderCount;
 	/// <summary>
 	/// Summary for DashboardScreen
 	/// </summary>
@@ -19,9 +19,18 @@ namespace Pages {
 		DashboardScreen(void)
 		{
 			InitializeComponent();
+			Dashboard d;
+			userCount = d.getUserCount();
+			productCount = d.getProductsCount();
+			orderCount = d.getOrderCounts();
+			this->total_users_count->Text = L"" + userCount;
+			this->totalproduct_count->Text = L"" + orderCount;
+			this->total_products_count->Text = L"" + productCount;
+
 			//
 			//TODO: Add the constructor code here
 			//
+
 		}
 
 	protected:
@@ -105,7 +114,7 @@ namespace Pages {
 			this->total_users_count->Name = L"total_users_count";
 			this->total_users_count->Size = System::Drawing::Size(55, 39);
 			this->total_users_count->TabIndex = 1;
-			this->total_users_count->Text = L"54";
+			this->total_users_count->Text = L""+userCount;
 			// 
 			// label7
 			// 
@@ -136,7 +145,7 @@ namespace Pages {
 			this->totalproduct_count->Name = L"totalproduct_count";
 			this->totalproduct_count->Size = System::Drawing::Size(55, 39);
 			this->totalproduct_count->TabIndex = 1;
-			this->totalproduct_count->Text = L"54";
+			this->totalproduct_count->Text = L""+productCount;
 			// 
 			// label3
 			// 
@@ -164,10 +173,10 @@ namespace Pages {
 			this->total_products_count->AutoSize = true;
 			this->total_products_count->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20));
 			this->total_products_count->Location = System::Drawing::Point(96, 60);
-			this->total_products_count->Name = L"total_products_count";
+			this->total_products_count->Name = L"total_order_count";
 			this->total_products_count->Size = System::Drawing::Size(55, 39);
 			this->total_products_count->TabIndex = 1;
-			this->total_products_count->Text = L"54";
+			this->total_products_count->Text = L""+orderCount;
 			// 
 			// label2
 			// 

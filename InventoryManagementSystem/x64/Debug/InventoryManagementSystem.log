@@ -1,7 +1,14 @@
 ﻿  Dashboard.cpp
   MyForm.cpp
-D:\task next\InventoryManagementSystem\InventoryManagementSystem\MyForm.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\userModel.h(11,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\userModel.h(12,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\userModel.h(13,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\userModel.h(51,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\userModel.h(102,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\userModel.h(103,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\MyForm.h(252,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\anish\Downloads\samir\InventoryManagementSystem\InventoryManagementSystem\MyForm.h(253,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Generating Code...
   Dashboard.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  InventoryManagementSystem.vcxproj -> D:\task next\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.exe
+  InventoryManagementSystem.vcxproj -> C:\Users\anish\Downloads\samir\InventoryManagementSystem\x64\Debug\InventoryManagementSystem.exe

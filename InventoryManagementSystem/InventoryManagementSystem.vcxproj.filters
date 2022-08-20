@@ -29,5 +29,28 @@
     <ClInclude Include="Dashboard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="userModel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="productModel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orderModel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dashboardModel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="users.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="products.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="orders.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

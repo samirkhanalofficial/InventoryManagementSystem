@@ -1,12 +1,12 @@
 #pragma once
 #include"Dashboard.h"
-
+#include"userModel.h"
+#include<msclr/marshal_cppstd.h>
 namespace InventoryManagementSystem {
 
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
-	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
 
@@ -247,12 +247,19 @@ namespace InventoryManagementSystem {
 #pragma endregion
 
 private: System::Void Login_Btn_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ email = this->textBox1->Text;
-	String^ password = this->textBox2->Text;
-	if (email == "admin" && password =="pass") {
+	msclr::interop::marshal_context context;
+	char email[200],password[16];
+	strcpy(email, context.marshal_as<string>(this->textBox1->Text).c_str());
+	strcpy(password, context.marshal_as<string>(this->textBox2->Text).c_str());
+
+	User u;
+	u.setUser("", email, password);
+	bool isloginned = u.login();
+	if (isloginned) {
 		this->Hide();
 		InventoryManagementSystem::Dashboard ^dashboard=gcnew Dashboard(this);
 		dashboard->Show();
+
 	}
 	else {
 		label5->Text = "Incorrect Email or Password.";

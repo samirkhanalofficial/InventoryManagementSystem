@@ -127,9 +127,13 @@
     <ClInclude Include="Dashboard.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="dashboardModel.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="orderModel.h" />
+    <ClInclude Include="productModel.h" />
+    <ClInclude Include="userModel.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard.resx">
@@ -143,6 +147,11 @@
     <ProjectReference Include="..\Pages\Pages.vcxproj">
       <Project>{23d77d0f-ca6a-414d-bfb9-cdb3188db833}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="orders.txt" />
+    <Text Include="products.txt" />
+    <Text Include="users.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

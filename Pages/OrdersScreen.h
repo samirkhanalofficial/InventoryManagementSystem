@@ -71,10 +71,9 @@ namespace Pages {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(22, 32);
-			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Location = System::Drawing::Point(29, 39);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(88, 29);
+			this->label1->Size = System::Drawing::Size(105, 36);
 			this->label1->TabIndex = 6;
 			this->label1->Text = L"Orders";
 			// 
@@ -83,10 +82,10 @@ namespace Pages {
 			this->pictureBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
-			this->pictureBox1->Location = System::Drawing::Point(748, 32);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox1->Location = System::Drawing::Point(997, 39);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(96, 50);
+			this->pictureBox1->Size = System::Drawing::Size(128, 62);
 			this->pictureBox1->TabIndex = 7;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &OrdersScreen::AddOrder);
@@ -94,32 +93,32 @@ namespace Pages {
 			// orderItem1
 			// 
 			this->orderItem1->BackColor = System::Drawing::Color::White;
-			this->orderItem1->Location = System::Drawing::Point(56, 95);
-			this->orderItem1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->orderItem1->Location = System::Drawing::Point(75, 117);
+			this->orderItem1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->orderItem1->Name = L"orderItem1";
-			this->orderItem1->Size = System::Drawing::Size(754, 181);
+			this->orderItem1->Size = System::Drawing::Size(1005, 223);
 			this->orderItem1->TabIndex = 8;
 			// 
 			// orderItem2
 			// 
 			this->orderItem2->BackColor = System::Drawing::Color::White;
-			this->orderItem2->Location = System::Drawing::Point(56, 295);
-			this->orderItem2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->orderItem2->Location = System::Drawing::Point(75, 363);
+			this->orderItem2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->orderItem2->Name = L"orderItem2";
-			this->orderItem2->Size = System::Drawing::Size(754, 181);
+			this->orderItem2->Size = System::Drawing::Size(1005, 223);
 			this->orderItem2->TabIndex = 9;
 			// 
 			// OrdersScreen
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->Controls->Add(this->orderItem2);
 			this->Controls->Add(this->orderItem1);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label1);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"OrdersScreen";
-			this->Size = System::Drawing::Size(856, 455);
+			this->Size = System::Drawing::Size(1141, 560);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();

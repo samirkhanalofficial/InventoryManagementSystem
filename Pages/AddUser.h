@@ -1,11 +1,12 @@
 #pragma once
+#include"../InventoryManagementSystem/userModel.h"
+//
+//# include <msclr/marshal_cppstd.h>
 
 namespace Pages {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
-	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
 
@@ -38,14 +39,21 @@ namespace Pages {
 	protected:
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::TextBox^ textBox4;
-	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::Label^ confirmpassword;
+
+	private: System::Windows::Forms::TextBox^ password;
+
 	private: System::Windows::Forms::Label^ label4;
-	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::TextBox^ email;
+
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TextBox^ fullname;
+
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ errormessage;
+	private: System::Windows::Forms::Label^ successMessage;
+
 
 	private:
 		/// <summary>
@@ -64,14 +72,16 @@ namespace Pages {
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->confirmpassword = (gcnew System::Windows::Forms::Label());
+			this->password = (gcnew System::Windows::Forms::TextBox());
 			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->email = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->fullname = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->errormessage = (gcnew System::Windows::Forms::Label());
+			this->successMessage = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button3
@@ -83,12 +93,14 @@ namespace Pages {
 			this->button3->ForeColor = System::Drawing::Color::Transparent;
 			this->button3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.Image")));
 			this->button3->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button3->Location = System::Drawing::Point(348, 365);
+			this->button3->Location = System::Drawing::Point(464, 449);
+			this->button3->Margin = System::Windows::Forms::Padding(4);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(236, 33);
+			this->button3->Size = System::Drawing::Size(315, 41);
 			this->button3->TabIndex = 91;
 			this->button3->Text = L"Add Users";
 			this->button3->UseVisualStyleBackColor = false;
+			this->button3->Click += gcnew System::EventHandler(this, &AddUser::AddUserBtn);
 			// 
 			// button1
 			// 
@@ -96,9 +108,10 @@ namespace Pages {
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
-			this->button1->Location = System::Drawing::Point(348, 83);
+			this->button1->Location = System::Drawing::Point(464, 102);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(236, 228);
+			this->button1->Size = System::Drawing::Size(315, 281);
 			this->button1->TabIndex = 90;
 			this->button1->Text = L"Add Picture";
 			this->button1->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
@@ -106,76 +119,84 @@ namespace Pages {
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(17, 285);
+			this->textBox4->Location = System::Drawing::Point(23, 351);
+			this->textBox4->Margin = System::Windows::Forms::Padding(4);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(217, 20);
+			this->textBox4->Size = System::Drawing::Size(288, 22);
 			this->textBox4->TabIndex = 89;
 			// 
-			// label5
+			// confirmpassword
 			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->confirmpassword->AutoSize = true;
+			this->confirmpassword->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(14, 255);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(123, 16);
-			this->label5->TabIndex = 88;
-			this->label5->Text = L"Conform  Password";
-			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->confirmpassword->Location = System::Drawing::Point(19, 314);
+			this->confirmpassword->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->confirmpassword->Name = L"confirmpassword";
+			this->confirmpassword->Size = System::Drawing::Size(152, 20);
+			this->confirmpassword->TabIndex = 88;
+			this->confirmpassword->Text = L"Confirm  Password";
+			this->confirmpassword->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// textBox3
+			// password
 			// 
-			this->textBox3->Location = System::Drawing::Point(17, 218);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(217, 20);
-			this->textBox3->TabIndex = 87;
+			this->password->Location = System::Drawing::Point(23, 268);
+			this->password->Margin = System::Windows::Forms::Padding(4);
+			this->password->Name = L"password";
+			this->password->Size = System::Drawing::Size(288, 22);
+			this->password->TabIndex = 87;
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(14, 189);
+			this->label4->Location = System::Drawing::Point(19, 233);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(67, 16);
+			this->label4->Size = System::Drawing::Size(83, 20);
 			this->label4->TabIndex = 86;
 			this->label4->Text = L"Password";
 			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// textBox2
+			// email
 			// 
-			this->textBox2->Location = System::Drawing::Point(17, 148);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(217, 20);
-			this->textBox2->TabIndex = 85;
+			this->email->Location = System::Drawing::Point(23, 182);
+			this->email->Margin = System::Windows::Forms::Padding(4);
+			this->email->Name = L"email";
+			this->email->Size = System::Drawing::Size(288, 22);
+			this->email->TabIndex = 85;
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(14, 119);
+			this->label3->Location = System::Drawing::Point(19, 146);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(41, 16);
+			this->label3->Size = System::Drawing::Size(51, 20);
 			this->label3->TabIndex = 84;
 			this->label3->Text = L"Email";
 			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// textBox1
+			// fullname
 			// 
-			this->textBox1->Location = System::Drawing::Point(17, 83);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(217, 20);
-			this->textBox1->TabIndex = 83;
+			this->fullname->Location = System::Drawing::Point(23, 102);
+			this->fullname->Margin = System::Windows::Forms::Padding(4);
+			this->fullname->Name = L"fullname";
+			this->fullname->Size = System::Drawing::Size(288, 22);
+			this->fullname->TabIndex = 83;
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(14, 64);
+			this->label2->Location = System::Drawing::Point(19, 79);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(68, 16);
+			this->label2->Size = System::Drawing::Size(85, 20);
 			this->label2->TabIndex = 82;
 			this->label2->Text = L"Full Name";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -186,29 +207,51 @@ namespace Pages {
 				static_cast<System::Byte>(0)));
 			this->label1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"label1.Image")));
 			this->label1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->label1->Location = System::Drawing::Point(15, 5);
+			this->label1->Location = System::Drawing::Point(20, 6);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(216, 44);
+			this->label1->Size = System::Drawing::Size(288, 54);
 			this->label1->TabIndex = 81;
 			this->label1->Text = L"Add User";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// errormessage
+			// 
+			this->errormessage->AutoSize = true;
+			this->errormessage->ForeColor = System::Drawing::Color::Red;
+			this->errormessage->Location = System::Drawing::Point(29, 403);
+			this->errormessage->Name = L"errormessage";
+			this->errormessage->Size = System::Drawing::Size(0, 16);
+			this->errormessage->TabIndex = 92;
+			// 
+			// successMessage
+			// 
+			this->successMessage->AutoSize = true;
+			this->successMessage->ForeColor = System::Drawing::Color::Lime;
+			this->successMessage->Location = System::Drawing::Point(35, 413);
+			this->successMessage->Name = L"successMessage";
+			this->successMessage->Size = System::Drawing::Size(0, 16);
+			this->successMessage->TabIndex = 93;
+			// 
 			// AddUser
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(617, 439);
+			this->ClientSize = System::Drawing::Size(823, 540);
+			this->Controls->Add(this->successMessage);
+			this->Controls->Add(this->errormessage);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox4);
-			this->Controls->Add(this->label5);
-			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->confirmpassword);
+			this->Controls->Add(this->password);
 			this->Controls->Add(this->label4);
-			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->email);
 			this->Controls->Add(this->label3);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->fullname);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"AddUser";
 			this->Text = L"AddUser";
 			this->ResumeLayout(false);
@@ -216,5 +259,30 @@ namespace Pages {
 
 		}
 #pragma endregion
-	};
+	private: System::Void AddUserBtn(System::Object^ sender, System::EventArgs^ e) {
+		/*this->errormessage->Text = "";
+		this->successMessage->Text = "";
+		msclr::interop::marshal_context context;
+		char name[50],email[200], password[16],confirmpassword[16];
+		strcpy(name, context.marshal_as<string>(this->fullname->Text).c_str());
+		strcpy(email, context.marshal_as<string>(this->email->Text).c_str());
+		strcpy(password, context.marshal_as<string>(this->password->Text).c_str());
+		strcpy(confirmpassword, context.marshal_as<string>(this->password->Text).c_str());
+		if (strcmp(password, confirmpassword) == 0) {
+			User u;
+			u.setUser(name, email, password);
+			if (u.append()) {
+				this->successMessage->Text = "user added.";
+
+			}
+			else {
+				this->errormessage->Text = "user already exists.";
+			}
+		}
+		else {
+			this->errormessage->Text = "password didn't match.";
+		}
+		*/
+	}
+};
 }
