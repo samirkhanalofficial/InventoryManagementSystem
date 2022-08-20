@@ -99,7 +99,7 @@ namespace Pages {
 			// 
 			// description
 			// 
-			this->description->BackColor = System::Drawing::SystemColors::Control;
+			this->description->BackColor = System::Drawing::Color::White;
 			this->description->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->description->Enabled = false;
 			this->description->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -191,6 +191,7 @@ namespace Pages {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::White;
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->stocks);
 			this->Controls->Add(this->label5);

@@ -40,6 +40,7 @@ namespace Pages {
 	private: System::Windows::Forms::Label^ label1;
 	private: Pages::UserItem^ userItem1;
 
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -84,7 +85,8 @@ namespace Pages {
 			// 
 			// userItem1
 			// 
-			this->userItem1->Location = System::Drawing::Point(69, 97);
+			this->userItem1->BackColor = System::Drawing::Color::White;
+			this->userItem1->Location = System::Drawing::Point(75, 111);
 			this->userItem1->Name = L"userItem1";
 			this->userItem1->Size = System::Drawing::Size(982, 224);
 			this->userItem1->TabIndex = 12;

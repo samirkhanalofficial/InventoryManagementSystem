@@ -144,18 +144,18 @@ namespace InventoryManagementSystem {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
 			this->users11 = (gcnew Pages::Users1());
-			this->users01 = (gcnew Pages::users0());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->products01 = (gcnew Pages::products1());
 			this->products00 = (gcnew Pages::products0());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->orders01 = (gcnew Pages::orders1());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
-			this->dahhboard11 = (gcnew Pages::dahhboard1());
+			this->dashboard01 = (gcnew Pages::dashboard0());
 			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->users01 = (gcnew Pages::users0());
+			this->dahhboard11 = (gcnew Pages::dahhboard1());
 			this->orders11 = (gcnew Pages::orders0());
-			this->dashboard01 = (gcnew Pages::dashboard0());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->dashboardScreen1 = (gcnew Pages::DashboardScreen());
 			this->ordersScreen1 = (gcnew Pages::OrdersScreen());
@@ -204,15 +204,6 @@ namespace InventoryManagementSystem {
 			this->users11->Size = System::Drawing::Size(172, 48);
 			this->users11->TabIndex = 1;
 			this->users11->Click += gcnew System::EventHandler(this, &Dashboard::usersopen);
-			// 
-			// users01
-			// 
-			this->users01->BackColor = System::Drawing::Color::Transparent;
-			this->users01->Location = System::Drawing::Point(0, 0);
-			this->users01->Name = L"users01";
-			this->users01->Size = System::Drawing::Size(169, 44);
-			this->users01->TabIndex = 0;
-			this->users01->Click += gcnew System::EventHandler(this, &Dashboard::usersopen);
 			// 
 			// panel5
 			// 
@@ -264,20 +255,21 @@ namespace InventoryManagementSystem {
 			// panel3
 			// 
 			this->panel3->Controls->Add(this->dashboard01);
+			this->panel3->ImeMode = System::Windows::Forms::ImeMode::Off;
 			this->panel3->Location = System::Drawing::Point(12, 184);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(244, 66);
 			this->panel3->TabIndex = 6;
 			this->panel3->Click += gcnew System::EventHandler(this, &Dashboard::dashboardopen);
 			// 
-			// dahhboard11
+			// dashboard01
 			// 
-			this->dahhboard11->BackColor = System::Drawing::Color::Transparent;
-			this->dahhboard11->Location = System::Drawing::Point(4, 14);
-			this->dahhboard11->Name = L"dahhboard11";
-			this->dahhboard11->Size = System::Drawing::Size(176, 46);
-			this->dahhboard11->TabIndex = 0;
-			this->dahhboard11->Click += gcnew System::EventHandler(this, &Dashboard::dashboardopen);
+			this->dashboard01->BackColor = System::Drawing::Color::Transparent;
+			this->dashboard01->Location = System::Drawing::Point(8, 14);
+			this->dashboard01->Name = L"dashboard01";
+			this->dashboard01->Size = System::Drawing::Size(172, 44);
+			this->dashboard01->TabIndex = 1;
+			this->dashboard01->Click += gcnew System::EventHandler(this, &Dashboard::dashboardopen);
 			// 
 			// pictureBox5
 			// 
@@ -303,6 +295,24 @@ namespace InventoryManagementSystem {
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			// 
+			// users01
+			// 
+			this->users01->BackColor = System::Drawing::Color::Transparent;
+			this->users01->Location = System::Drawing::Point(0, 0);
+			this->users01->Name = L"users01";
+			this->users01->Size = System::Drawing::Size(169, 44);
+			this->users01->TabIndex = 0;
+			this->users01->Click += gcnew System::EventHandler(this, &Dashboard::usersopen);
+			// 
+			// dahhboard11
+			// 
+			this->dahhboard11->BackColor = System::Drawing::Color::Transparent;
+			this->dahhboard11->Location = System::Drawing::Point(4, 14);
+			this->dahhboard11->Name = L"dahhboard11";
+			this->dahhboard11->Size = System::Drawing::Size(176, 46);
+			this->dahhboard11->TabIndex = 0;
+			this->dahhboard11->Click += gcnew System::EventHandler(this, &Dashboard::dashboardopen);
+			// 
 			// orders11
 			// 
 			this->orders11->BackColor = System::Drawing::Color::Transparent;
@@ -311,15 +321,6 @@ namespace InventoryManagementSystem {
 			this->orders11->Size = System::Drawing::Size(171, 45);
 			this->orders11->TabIndex = 1;
 			this->orders11->Click += gcnew System::EventHandler(this, &Dashboard::ordersopen);
-			// 
-			// dashboard01
-			// 
-			this->dashboard01->BackColor = System::Drawing::Color::Transparent;
-			this->dashboard01->Location = System::Drawing::Point(8, 14);
-			this->dashboard01->Name = L"dashboard01";
-			this->dashboard01->Size = System::Drawing::Size(172, 44);
-			this->dashboard01->TabIndex = 1;
-			this->dashboard01->Click += gcnew System::EventHandler(this, &Dashboard::dashboardopen);
 			// 
 			// panel2
 			// 

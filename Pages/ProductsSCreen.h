@@ -46,6 +46,11 @@ namespace Pages {
 
 
 
+
+
+
+
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -91,14 +96,20 @@ namespace Pages {
 			// 
 			// productItem1
 			// 
-			this->productItem1->Location = System::Drawing::Point(81, 131);
+			this->productItem1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->productItem1->BackColor = System::Drawing::Color::White;
+			this->productItem1->Location = System::Drawing::Point(81, 100);
 			this->productItem1->Name = L"productItem1";
 			this->productItem1->Size = System::Drawing::Size(990, 225);
 			this->productItem1->TabIndex = 10;
 			// 
 			// productItem2
 			// 
-			this->productItem2->Location = System::Drawing::Point(81, 342);
+			this->productItem2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->productItem2->BackColor = System::Drawing::Color::White;
+			this->productItem2->Location = System::Drawing::Point(81, 360);
 			this->productItem2->Name = L"productItem2";
 			this->productItem2->Size = System::Drawing::Size(990, 225);
 			this->productItem2->TabIndex = 11;

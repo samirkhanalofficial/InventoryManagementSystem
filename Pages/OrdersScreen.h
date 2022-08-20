@@ -40,6 +40,8 @@ namespace Pages {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: Pages::OrderItem^ orderItem1;
 	private: Pages::OrderItem^ orderItem2;
+
+
 	protected:
 
 	private:
@@ -87,17 +89,18 @@ namespace Pages {
 			// 
 			// orderItem1
 			// 
-
-			this->orderItem1->Location = System::Drawing::Point(55, 125);
+			this->orderItem1->BackColor = System::Drawing::Color::White;
+			this->orderItem1->Location = System::Drawing::Point(75, 117);
 			this->orderItem1->Name = L"orderItem1";
-			this->orderItem1->Size = System::Drawing::Size(1005, 190);
+			this->orderItem1->Size = System::Drawing::Size(1005, 223);
 			this->orderItem1->TabIndex = 8;
 			// 
 			// orderItem2
 			// 
-			this->orderItem2->Location = System::Drawing::Point(55, 339);
+			this->orderItem2->BackColor = System::Drawing::Color::White;
+			this->orderItem2->Location = System::Drawing::Point(75, 363);
 			this->orderItem2->Name = L"orderItem2";
-			this->orderItem2->Size = System::Drawing::Size(1005, 190);
+			this->orderItem2->Size = System::Drawing::Size(1005, 223);
 			this->orderItem2->TabIndex = 9;
 			// 
 			// OrdersScreen
